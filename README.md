@@ -5,5 +5,5 @@ Quantum Random Number Generator(QRNG) used to simulate quantum-based randomness.
 
 Since actual hardware is not accessible(rignt now), the first version simulates quantum states using random functions available in C itself. 
 
-**#V1.0.1 - Added a feauture to save generated random numbers to a file for later use. **
+**#V1.0.1 - Added a feauture to save generated random numbers to a file for later use.**
 
