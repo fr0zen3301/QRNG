@@ -7,4 +7,6 @@ Since actual hardware is not accessible(currentlysa), the first version simulate
 
 **#V1.0.1 - Added a feauture to save generated random numbers to a file for later use.**
 
-V1.1 contains a simplified test for Bell's inequality violation, which shows that the QRNG mimics actual quantum randomness, not classical one.
+**#V1.0.2 - Combines bits into bytes to generate larger random numbers for encoding data.** 
+
+Upcome in future versions - V1.1 contains a simplified test for Bell's inequality violation, which shows that the QRNG mimics actual quantum randomness, not classical one.
