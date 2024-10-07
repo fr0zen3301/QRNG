@@ -25,7 +25,7 @@ void QRNG_bytes(int n, const char* filename) {
     // Generate and write the random bits
     for (int i = 0; i < n; i++) {
         int bit = quantum_superposition();
-        printf("%d", bit);
+        // printf("%d", bit);
         
         // Combine the bit into the byte
         byte |= (bit << bit_count);
@@ -38,6 +38,7 @@ void QRNG_bytes(int n, const char* filename) {
             byte = 0; // Reset for the next group of bytes
         } 
     }
+    fprintf(file, "\n");
     printf("\n");
     // Leftovers bits that didn't form a full byte
     if (bit_count > 0) {
