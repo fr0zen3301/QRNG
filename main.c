@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "SDL.h"
 
 #define BITS_IN_BYTE 8
 
@@ -21,8 +22,8 @@ void QRNG_bytes(int n, const char* filename) {
         printf("Error opening file\n");
         return;
     }
-    printf("Quantum Random Bits: ");
-    // Generate and write the random bits
+    // printf("Quantum Random Bits: ");
+    // Generate and write the random bits one by one
     for (int i = 0; i < n; i++) {
         int bit = quantum_superposition();
         // printf("%d", bit);
