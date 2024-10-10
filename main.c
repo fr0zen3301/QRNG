@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "SDL.h"
 
 #define BITS_IN_BYTE 8
 
 int quantum_superposition() {
     
     // Simulate a 50% probability of collapsins to 0 or 1(polarization)
-    // It's being detected vertically or horizontally (0 or 1)
+    // It's being detected vertically or horizontally (0 or 1(qubits))
     // Collapse of the wave function
     return rand() % 2; 
 }
@@ -55,7 +54,10 @@ int main() {
     int num_bits; // Ask for the amount of random bits
     printf("Number of random bits to generate: ");
     scanf("%d", &num_bits);
-    srand(time(0)); // To not get the same sequence every time
+    srand(time(0)); // seed C's random library to get different results. 
+    
+    // TO DO: make a seed with user's input 
+
     QRNG_bytes(num_bits, random_number);
     return 0;
 }
