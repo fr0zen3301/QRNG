@@ -10,4 +10,7 @@ Since actual hardware is not accessible(currently), the first version simulates 
 **#V1.0.2 - Combines bits into bytes to generate larger random numbers for encoding data.** 
 Randomly measures every bit and accumulates a byte. Provides the result in HEX as output file.
 
-Upcome in future versions - V1.1 contains a simplified test for Bell's inequality violation, which shows that the QRNG mimics actual quantum randomness, not classical one.
+
+### V2.0 - integrating QRNG with Qiskit to create and manipulate random qubits, simulating the behavior of quantum systems. In progress...
+
+Kept QRNG in c for core functions to maintain performance for the random number generation. And since I'm going to implement the QRNG with the Qiskit, quantum computing framework, and add some visualizations decided to move to Python. 
