@@ -1957,9 +1957,6 @@ static void __Pyx_AddTraceback(const char *funcname, int c_line,
 /* CIntFromPy.proto */
 static CYTHON_INLINE int __Pyx_PyInt_As_int(PyObject *);
 
-/* CIntToPy.proto */
-static CYTHON_INLINE PyObject* __Pyx_PyInt_From_int(int value);
-
 /* FormatTypeName.proto */
 #if CYTHON_COMPILING_IN_LIMITED_API
 typedef PyObject *__Pyx_TypeName;
@@ -2016,7 +2013,7 @@ int __pyx_module_is_main_qrng_wrapper = 0;
 /* #### Code section: global_var ### */
 /* #### Code section: string_decls ### */
 static const char __pyx_k_n[] = "n";
-static const char __pyx_k__4[] = "?";
+static const char __pyx_k__3[] = "?";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
 static const char __pyx_k_test[] = "__test__";
@@ -2029,10 +2026,8 @@ static const char __pyx_k_qrng_wrapper_pyx[] = "qrng_wrapper.pyx";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_quantum_random_bytes[] = "quantum_random_bytes";
-static const char __pyx_k_quantum_superposition_C[] = "quantum_superposition_C";
 /* #### Code section: decls ### */
-static PyObject *__pyx_pf_12qrng_wrapper_quantum_superposition_C(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_12qrng_wrapper_2quantum_random_bytes(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_n, PyObject *__pyx_v_filename); /* proto */
+static PyObject *__pyx_pf_12qrng_wrapper_quantum_random_bytes(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_n, PyObject *__pyx_v_filename); /* proto */
 static __Pyx_CachedCFunction __pyx_umethod_PyString_Type_encode = {0, 0, 0, 0, 0};
 /* #### Code section: late_includes ### */
 /* #### Code section: module_state ### */
@@ -2063,7 +2058,7 @@ typedef struct {
   #endif
   #if CYTHON_USE_MODULE_STATE
   #endif
-  PyObject *__pyx_n_s__4;
+  PyObject *__pyx_n_s__3;
   PyObject *__pyx_n_s_asyncio_coroutines;
   PyObject *__pyx_n_s_cline_in_traceback;
   PyObject *__pyx_n_s_encode;
@@ -2075,12 +2070,10 @@ typedef struct {
   PyObject *__pyx_n_s_qrng_wrapper;
   PyObject *__pyx_kp_s_qrng_wrapper_pyx;
   PyObject *__pyx_n_s_quantum_random_bytes;
-  PyObject *__pyx_n_s_quantum_superposition_C;
   PyObject *__pyx_n_s_test;
   PyObject *__pyx_kp_s_utf_8;
-  PyObject *__pyx_codeobj_;
-  PyObject *__pyx_tuple__2;
-  PyObject *__pyx_codeobj__3;
+  PyObject *__pyx_tuple_;
+  PyObject *__pyx_codeobj__2;
 } __pyx_mstate;
 
 #if CYTHON_USE_MODULE_STATE
@@ -2123,7 +2116,7 @@ static int __pyx_m_clear(PyObject *m) {
   #ifdef __Pyx_FusedFunction_USED
   Py_CLEAR(clear_module_state->__pyx_FusedFunctionType);
   #endif
-  Py_CLEAR(clear_module_state->__pyx_n_s__4);
+  Py_CLEAR(clear_module_state->__pyx_n_s__3);
   Py_CLEAR(clear_module_state->__pyx_n_s_asyncio_coroutines);
   Py_CLEAR(clear_module_state->__pyx_n_s_cline_in_traceback);
   Py_CLEAR(clear_module_state->__pyx_n_s_encode);
@@ -2135,12 +2128,10 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_qrng_wrapper);
   Py_CLEAR(clear_module_state->__pyx_kp_s_qrng_wrapper_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_quantum_random_bytes);
-  Py_CLEAR(clear_module_state->__pyx_n_s_quantum_superposition_C);
   Py_CLEAR(clear_module_state->__pyx_n_s_test);
   Py_CLEAR(clear_module_state->__pyx_kp_s_utf_8);
-  Py_CLEAR(clear_module_state->__pyx_codeobj_);
-  Py_CLEAR(clear_module_state->__pyx_tuple__2);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__3);
+  Py_CLEAR(clear_module_state->__pyx_tuple_);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__2);
   return 0;
 }
 #endif
@@ -2161,7 +2152,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   #ifdef __Pyx_FusedFunction_USED
   Py_VISIT(traverse_module_state->__pyx_FusedFunctionType);
   #endif
-  Py_VISIT(traverse_module_state->__pyx_n_s__4);
+  Py_VISIT(traverse_module_state->__pyx_n_s__3);
   Py_VISIT(traverse_module_state->__pyx_n_s_asyncio_coroutines);
   Py_VISIT(traverse_module_state->__pyx_n_s_cline_in_traceback);
   Py_VISIT(traverse_module_state->__pyx_n_s_encode);
@@ -2173,12 +2164,10 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_qrng_wrapper);
   Py_VISIT(traverse_module_state->__pyx_kp_s_qrng_wrapper_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_quantum_random_bytes);
-  Py_VISIT(traverse_module_state->__pyx_n_s_quantum_superposition_C);
   Py_VISIT(traverse_module_state->__pyx_n_s_test);
   Py_VISIT(traverse_module_state->__pyx_kp_s_utf_8);
-  Py_VISIT(traverse_module_state->__pyx_codeobj_);
-  Py_VISIT(traverse_module_state->__pyx_tuple__2);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__3);
+  Py_VISIT(traverse_module_state->__pyx_tuple_);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__2);
   return 0;
 }
 #endif
@@ -2209,7 +2198,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #endif
 #if CYTHON_USE_MODULE_STATE
 #endif
-#define __pyx_n_s__4 __pyx_mstate_global->__pyx_n_s__4
+#define __pyx_n_s__3 __pyx_mstate_global->__pyx_n_s__3
 #define __pyx_n_s_asyncio_coroutines __pyx_mstate_global->__pyx_n_s_asyncio_coroutines
 #define __pyx_n_s_cline_in_traceback __pyx_mstate_global->__pyx_n_s_cline_in_traceback
 #define __pyx_n_s_encode __pyx_mstate_global->__pyx_n_s_encode
@@ -2221,97 +2210,29 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_qrng_wrapper __pyx_mstate_global->__pyx_n_s_qrng_wrapper
 #define __pyx_kp_s_qrng_wrapper_pyx __pyx_mstate_global->__pyx_kp_s_qrng_wrapper_pyx
 #define __pyx_n_s_quantum_random_bytes __pyx_mstate_global->__pyx_n_s_quantum_random_bytes
-#define __pyx_n_s_quantum_superposition_C __pyx_mstate_global->__pyx_n_s_quantum_superposition_C
 #define __pyx_n_s_test __pyx_mstate_global->__pyx_n_s_test
 #define __pyx_kp_s_utf_8 __pyx_mstate_global->__pyx_kp_s_utf_8
-#define __pyx_codeobj_ __pyx_mstate_global->__pyx_codeobj_
-#define __pyx_tuple__2 __pyx_mstate_global->__pyx_tuple__2
-#define __pyx_codeobj__3 __pyx_mstate_global->__pyx_codeobj__3
+#define __pyx_tuple_ __pyx_mstate_global->__pyx_tuple_
+#define __pyx_codeobj__2 __pyx_mstate_global->__pyx_codeobj__2
 /* #### Code section: module_code ### */
 
-/* "qrng_wrapper.pyx":5
+/* "qrng_wrapper.pyx":4
  *     void QRNG_bytes(int n, const char* filename)
- * 
- * def quantum_superposition_C():             # <<<<<<<<<<<<<<
- *     return quantum_superposition()
- * 
- */
-
-/* Python wrapper */
-static PyObject *__pyx_pw_12qrng_wrapper_1quantum_superposition_C(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyMethodDef __pyx_mdef_12qrng_wrapper_1quantum_superposition_C = {"quantum_superposition_C", (PyCFunction)__pyx_pw_12qrng_wrapper_1quantum_superposition_C, METH_NOARGS, 0};
-static PyObject *__pyx_pw_12qrng_wrapper_1quantum_superposition_C(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused) {
-  CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
-  PyObject *__pyx_r = 0;
-  __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("quantum_superposition_C (wrapper)", 0);
-  __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_12qrng_wrapper_quantum_superposition_C(__pyx_self);
-
-  /* function exit code */
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-static PyObject *__pyx_pf_12qrng_wrapper_quantum_superposition_C(CYTHON_UNUSED PyObject *__pyx_self) {
-  PyObject *__pyx_r = NULL;
-  __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  int __pyx_lineno = 0;
-  const char *__pyx_filename = NULL;
-  int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("quantum_superposition_C", 1);
-
-  /* "qrng_wrapper.pyx":6
- * 
- * def quantum_superposition_C():
- *     return quantum_superposition()             # <<<<<<<<<<<<<<
- * 
- * def quantum_random_bytes(int n, str filename):
- */
-  __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(quantum_superposition()); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_r = __pyx_t_1;
-  __pyx_t_1 = 0;
-  goto __pyx_L0;
-
-  /* "qrng_wrapper.pyx":5
- *     void QRNG_bytes(int n, const char* filename)
- * 
- * def quantum_superposition_C():             # <<<<<<<<<<<<<<
- *     return quantum_superposition()
- * 
- */
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("qrng_wrapper.quantum_superposition_C", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __pyx_r = NULL;
-  __pyx_L0:;
-  __Pyx_XGIVEREF(__pyx_r);
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-/* "qrng_wrapper.pyx":8
- *     return quantum_superposition()
  * 
  * def quantum_random_bytes(int n, str filename):             # <<<<<<<<<<<<<<
- *     QRNG_bytes(n, filename.encode('utf-8'))
+ *     QRNG_bytes(n, filename.encode('utf-8')) # encode to not get TypeError
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12qrng_wrapper_3quantum_random_bytes(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_12qrng_wrapper_1quantum_random_bytes(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_12qrng_wrapper_3quantum_random_bytes = {"quantum_random_bytes", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_12qrng_wrapper_3quantum_random_bytes, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_12qrng_wrapper_3quantum_random_bytes(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_12qrng_wrapper_1quantum_random_bytes = {"quantum_random_bytes", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_12qrng_wrapper_1quantum_random_bytes, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_12qrng_wrapper_1quantum_random_bytes(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -2358,7 +2279,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 8, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 4, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -2366,14 +2287,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 8, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 4, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("quantum_random_bytes", 1, 2, 2, 1); __PYX_ERR(0, 8, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("quantum_random_bytes", 1, 2, 2, 1); __PYX_ERR(0, 4, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "quantum_random_bytes") < 0)) __PYX_ERR(0, 8, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "quantum_random_bytes") < 0)) __PYX_ERR(0, 4, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -2381,12 +2302,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
       values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
     }
-    __pyx_v_n = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 8, __pyx_L3_error)
+    __pyx_v_n = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 4, __pyx_L3_error)
     __pyx_v_filename = ((PyObject*)values[1]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("quantum_random_bytes", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 8, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("quantum_random_bytes", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 4, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -2400,8 +2321,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_filename), (&PyString_Type), 1, "filename", 1))) __PYX_ERR(0, 8, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12qrng_wrapper_2quantum_random_bytes(__pyx_self, __pyx_v_n, __pyx_v_filename);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_filename), (&PyString_Type), 1, "filename", 1))) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_r = __pyx_pf_12qrng_wrapper_quantum_random_bytes(__pyx_self, __pyx_v_n, __pyx_v_filename);
 
   /* function exit code */
   goto __pyx_L0;
@@ -2418,7 +2339,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12qrng_wrapper_2quantum_random_bytes(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_n, PyObject *__pyx_v_filename) {
+static PyObject *__pyx_pf_12qrng_wrapper_quantum_random_bytes(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_n, PyObject *__pyx_v_filename) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2428,22 +2349,22 @@ static PyObject *__pyx_pf_12qrng_wrapper_2quantum_random_bytes(CYTHON_UNUSED PyO
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("quantum_random_bytes", 1);
 
-  /* "qrng_wrapper.pyx":9
+  /* "qrng_wrapper.pyx":5
  * 
  * def quantum_random_bytes(int n, str filename):
- *     QRNG_bytes(n, filename.encode('utf-8'))             # <<<<<<<<<<<<<<
+ *     QRNG_bytes(n, filename.encode('utf-8')) # encode to not get TypeError             # <<<<<<<<<<<<<<
  */
-  __pyx_t_1 = __Pyx_CallUnboundCMethod1(&__pyx_umethod_PyString_Type_encode, __pyx_v_filename, __pyx_kp_s_utf_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CallUnboundCMethod1(&__pyx_umethod_PyString_Type_encode, __pyx_v_filename, __pyx_kp_s_utf_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_AsString(__pyx_t_1); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_AsString(__pyx_t_1); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 5, __pyx_L1_error)
   QRNG_bytes(__pyx_v_n, __pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "qrng_wrapper.pyx":8
- *     return quantum_superposition()
+  /* "qrng_wrapper.pyx":4
+ *     void QRNG_bytes(int n, const char* filename)
  * 
  * def quantum_random_bytes(int n, str filename):             # <<<<<<<<<<<<<<
- *     QRNG_bytes(n, filename.encode('utf-8'))
+ *     QRNG_bytes(n, filename.encode('utf-8')) # encode to not get TypeError
  */
 
   /* function exit code */
@@ -2475,7 +2396,7 @@ static PyMethodDef __pyx_methods[] = {
 
 static int __Pyx_CreateStringTabAndInitStrings(void) {
   __Pyx_StringTabEntry __pyx_string_tab[] = {
-    {&__pyx_n_s__4, __pyx_k__4, sizeof(__pyx_k__4), 0, 0, 1, 1},
+    {&__pyx_n_s__3, __pyx_k__3, sizeof(__pyx_k__3), 0, 0, 1, 1},
     {&__pyx_n_s_asyncio_coroutines, __pyx_k_asyncio_coroutines, sizeof(__pyx_k_asyncio_coroutines), 0, 0, 1, 1},
     {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
     {&__pyx_n_s_encode, __pyx_k_encode, sizeof(__pyx_k_encode), 0, 0, 1, 1},
@@ -2487,7 +2408,6 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_qrng_wrapper, __pyx_k_qrng_wrapper, sizeof(__pyx_k_qrng_wrapper), 0, 0, 1, 1},
     {&__pyx_kp_s_qrng_wrapper_pyx, __pyx_k_qrng_wrapper_pyx, sizeof(__pyx_k_qrng_wrapper_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_quantum_random_bytes, __pyx_k_quantum_random_bytes, sizeof(__pyx_k_quantum_random_bytes), 0, 0, 1, 1},
-    {&__pyx_n_s_quantum_superposition_C, __pyx_k_quantum_superposition_C, sizeof(__pyx_k_quantum_superposition_C), 0, 0, 1, 1},
     {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
     {&__pyx_kp_s_utf_8, __pyx_k_utf_8, sizeof(__pyx_k_utf_8), 0, 0, 1, 0},
     {0, 0, 0, 0, 0, 0, 0}
@@ -2504,25 +2424,16 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "qrng_wrapper.pyx":5
+  /* "qrng_wrapper.pyx":4
  *     void QRNG_bytes(int n, const char* filename)
  * 
- * def quantum_superposition_C():             # <<<<<<<<<<<<<<
- *     return quantum_superposition()
- * 
- */
-  __pyx_codeobj_ = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_qrng_wrapper_pyx, __pyx_n_s_quantum_superposition_C, 5, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj_)) __PYX_ERR(0, 5, __pyx_L1_error)
-
-  /* "qrng_wrapper.pyx":8
- *     return quantum_superposition()
- * 
  * def quantum_random_bytes(int n, str filename):             # <<<<<<<<<<<<<<
- *     QRNG_bytes(n, filename.encode('utf-8'))
+ *     QRNG_bytes(n, filename.encode('utf-8')) # encode to not get TypeError
  */
-  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_n_s_n, __pyx_n_s_filename); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 8, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__2);
-  __Pyx_GIVEREF(__pyx_tuple__2);
-  __pyx_codeobj__3 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__2, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_qrng_wrapper_pyx, __pyx_n_s_quantum_random_bytes, 8, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__3)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(2, __pyx_n_s_n, __pyx_n_s_filename); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple_);
+  __Pyx_GIVEREF(__pyx_tuple_);
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_qrng_wrapper_pyx, __pyx_n_s_quantum_random_bytes, 4, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -2888,33 +2799,21 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "qrng_wrapper.pyx":5
+  /* "qrng_wrapper.pyx":4
  *     void QRNG_bytes(int n, const char* filename)
  * 
- * def quantum_superposition_C():             # <<<<<<<<<<<<<<
- *     return quantum_superposition()
- * 
- */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12qrng_wrapper_1quantum_superposition_C, 0, __pyx_n_s_quantum_superposition_C, NULL, __pyx_n_s_qrng_wrapper, __pyx_d, ((PyObject *)__pyx_codeobj_)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_quantum_superposition_C, __pyx_t_2) < 0) __PYX_ERR(0, 5, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-
-  /* "qrng_wrapper.pyx":8
- *     return quantum_superposition()
- * 
  * def quantum_random_bytes(int n, str filename):             # <<<<<<<<<<<<<<
- *     QRNG_bytes(n, filename.encode('utf-8'))
+ *     QRNG_bytes(n, filename.encode('utf-8')) # encode to not get TypeError
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12qrng_wrapper_3quantum_random_bytes, 0, __pyx_n_s_quantum_random_bytes, NULL, __pyx_n_s_qrng_wrapper, __pyx_d, ((PyObject *)__pyx_codeobj__3)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12qrng_wrapper_1quantum_random_bytes, 0, __pyx_n_s_quantum_random_bytes, NULL, __pyx_n_s_qrng_wrapper, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_quantum_random_bytes, __pyx_t_2) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_quantum_random_bytes, __pyx_t_2) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "qrng_wrapper.pyx":1
  * cdef extern from "qrng.h":             # <<<<<<<<<<<<<<
- *     int quantum_superposition()
  *     void QRNG_bytes(int n, const char* filename)
+ * 
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5606,77 +5505,6 @@ raise_neg_overflow:
     return (int) -1;
 }
 
-/* CIntToPy */
-static CYTHON_INLINE PyObject* __Pyx_PyInt_From_int(int value) {
-#ifdef __Pyx_HAS_GCC_DIAGNOSTIC
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wconversion"
-#endif
-    const int neg_one = (int) -1, const_zero = (int) 0;
-#ifdef __Pyx_HAS_GCC_DIAGNOSTIC
-#pragma GCC diagnostic pop
-#endif
-    const int is_unsigned = neg_one > const_zero;
-    if (is_unsigned) {
-        if (sizeof(int) < sizeof(long)) {
-            return PyInt_FromLong((long) value);
-        } else if (sizeof(int) <= sizeof(unsigned long)) {
-            return PyLong_FromUnsignedLong((unsigned long) value);
-#ifdef HAVE_LONG_LONG
-        } else if (sizeof(int) <= sizeof(unsigned PY_LONG_LONG)) {
-            return PyLong_FromUnsignedLongLong((unsigned PY_LONG_LONG) value);
-#endif
-        }
-    } else {
-        if (sizeof(int) <= sizeof(long)) {
-            return PyInt_FromLong((long) value);
-#ifdef HAVE_LONG_LONG
-        } else if (sizeof(int) <= sizeof(PY_LONG_LONG)) {
-            return PyLong_FromLongLong((PY_LONG_LONG) value);
-#endif
-        }
-    }
-    {
-        unsigned char *bytes = (unsigned char *)&value;
-#if !CYTHON_COMPILING_IN_LIMITED_API && PY_VERSION_HEX >= 0x030d00A4
-        if (is_unsigned) {
-            return PyLong_FromUnsignedNativeBytes(bytes, sizeof(value), -1);
-        } else {
-            return PyLong_FromNativeBytes(bytes, sizeof(value), -1);
-        }
-#elif !CYTHON_COMPILING_IN_LIMITED_API && PY_VERSION_HEX < 0x030d0000
-        int one = 1; int little = (int)*(unsigned char *)&one;
-        return _PyLong_FromByteArray(bytes, sizeof(int),
-                                     little, !is_unsigned);
-#else
-        int one = 1; int little = (int)*(unsigned char *)&one;
-        PyObject *from_bytes, *result = NULL;
-        PyObject *py_bytes = NULL, *arg_tuple = NULL, *kwds = NULL, *order_str = NULL;
-        from_bytes = PyObject_GetAttrString((PyObject*)&PyLong_Type, "from_bytes");
-        if (!from_bytes) return NULL;
-        py_bytes = PyBytes_FromStringAndSize((char*)bytes, sizeof(int));
-        if (!py_bytes) goto limited_bad;
-        order_str = PyUnicode_FromString(little ? "little" : "big");
-        if (!order_str) goto limited_bad;
-        arg_tuple = PyTuple_Pack(2, py_bytes, order_str);
-        if (!arg_tuple) goto limited_bad;
-        if (!is_unsigned) {
-            kwds = PyDict_New();
-            if (!kwds) goto limited_bad;
-            if (PyDict_SetItemString(kwds, "signed", __Pyx_NewRef(Py_True))) goto limited_bad;
-        }
-        result = PyObject_Call(from_bytes, arg_tuple, kwds);
-        limited_bad:
-        Py_XDECREF(kwds);
-        Py_XDECREF(arg_tuple);
-        Py_XDECREF(order_str);
-        Py_XDECREF(py_bytes);
-        Py_XDECREF(from_bytes);
-        return result;
-#endif
-    }
-}
-
 /* FormatTypeName */
 #if CYTHON_COMPILING_IN_LIMITED_API
 static __Pyx_TypeName
@@ -5687,7 +5515,7 @@ __Pyx_PyType_GetName(PyTypeObject* tp)
     if (unlikely(name == NULL) || unlikely(!PyUnicode_Check(name))) {
         PyErr_Clear();
         Py_XDECREF(name);
-        name = __Pyx_NewRef(__pyx_n_s__4);
+        name = __Pyx_NewRef(__pyx_n_s__3);
     }
     return name;
 }
