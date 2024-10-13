@@ -13,4 +13,4 @@ Randomly measures every bit and accumulates a byte. Provides the result in HEX a
 
 ### V2.0 - integrating QRNG with Qiskit to create and manipulate random qubits, simulating the behavior of quantum systems. In progress...
 
-Kept QRNG in c for core functions to maintain performance for the random number generation. And since I'm going to implement the QRNG with the Qiskit, quantum computing framework, and add some visualizations decided to move to Python. 
+Kept the QRNG module in C for core functions to maintain performance for the random number generation. And since I'm going to implement the QRNG with the Qiskit, quantum computing framework, and add some visualizations decided to move to Python. 
