@@ -1,7 +1,6 @@
 import qrng_wrapper
 
+n_bits = 256
 filename = "qrn.txt"
-# number of bits
-n_bits = 260
-
-qrng_wrapper.quantum_random_bytes(n_bits, filename)
+qrng_wrapper.seed_rng() # seed the random number generator
+qrng_wrapper.generate_qrng_bytes(n_bits, filename)

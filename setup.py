@@ -1,15 +1,14 @@
 from setuptools import setup, Extension
 from Cython.Build import cythonize
 
-# define C extension
-ext_modules = [
+extensions = [
     Extension(
-        "qrng_wrapper",                        # module name
-        sources=["qrng_wrapper.pyx", "qrng.c"] # source files
+        name="qrng_wrapper",
+        sources=["qrng.pyx", "main.c"],
+        language="c",
     )
 ]
 
 setup(
-    name="qrng_wrapper",
-    ext_modules=cythonize(ext_modules),
+    ext_modules=cythonize(extensions),
 )
