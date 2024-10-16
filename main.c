@@ -55,8 +55,8 @@ void QRNG_bytes(int n, const char* filename) {
 
 int main() {
     char* filename = "qrn.txt";
-    int num_bits; // Ask for the amount of random bits
-    printf("Number of random bits to generate: ");
+    int num_bits;
+    printf("Number of random bits to generate: "); // Ask for the amount of random bits
     scanf("%d", &num_bits);
     seed_random_generator(); // seed C's random library to get different results.
     
