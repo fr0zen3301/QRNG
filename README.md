@@ -12,6 +12,6 @@ Randomly measures every bit and accumulates a byte. Provides the result in HEX a
 
 ### V2.0 - integrating QRNG with Qiskit to create and manipulate random qubits, simulating the behavior of quantum systems(Actual hardware). In progress...
 
-Kept the QRNG module in C for core functions to maintain performance for the random number generation. The QRNG will be implemented with [Qiskit](https://www.ibm.com/quantum/qiskit), quantum computing framework, and some visualizations of randomness will be addded.
+Kept the QRNG module in C for core functions to maintain performance for the random number generation. The QRNG will be implemented with [Qiskit](https://www.ibm.com/quantum/qiskit), quantum computing framework, and some visualizations of randomness will be added.
 
 Using Qiskit to simulate a quantum channel connection and send a key for AES encryption. QRNG is integrated for generating truly random qubits. 
