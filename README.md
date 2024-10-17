@@ -10,7 +10,7 @@ Since actual hardware is not accessible(currently), the first version simulates 
 **#V1.0.2 - Combines bits into bytes to generate larger random numbers for encoding data.** 
 Randomly measures every bit and accumulates a byte. Provides the result in HEX as output file.
 
-### V2.0 - integrating QRNG with Qiskit to create and manipulate random qubits, simulating the behavior of quantum systems(Actual hardware). In progress...
+# V2.0 - integrating QRNG with Qiskit to create and manipulate random qubits, simulating the behavior of quantum systems(Actual hardware). In progress...
 
 Kept the QRNG module in C for core functions to maintain performance for the random number generation. The QRNG will be implemented with [Qiskit](https://www.ibm.com/quantum/qiskit), quantum computing framework, and some visualizations of randomness will be added.
 
