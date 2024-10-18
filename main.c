@@ -19,8 +19,8 @@ int quantum_superposition() {
 
 void QRNG_bytes(int n, const char* filename) {
     FILE *file = fopen(filename, "w");
-    unsigned char byte = 0; // Accumulate bits into a byte
-    int bit_count = 0;
+    // unsigned char byte = 0; // Accumulate bits into a byte
+    // int bit_count = 0;
     if (file == NULL) {
         printf("Error opening file\n");
         return;
@@ -29,29 +29,30 @@ void QRNG_bytes(int n, const char* filename) {
     // Generate and write the random bits one by one
     for (int i = 0; i < n; i++) {
         int bit = quantum_superposition();
+        fprintf(file, "%d", bit);
         // printf("%d", bit);
 
-        // Combine the bit into the byte
-        byte |= (bit << bit_count);
-        bit_count++;
+//        Combine the bit into the byte
+//        byte |= (bit << bit_count);
+//        bit_count++;
 
         // Check if there's a byte(8 bits) and reset
-        if(bit_count == BITS_IN_BYTE) {
-            fprintf(file, "%02X", byte); // Write it into the file
-            bit_count = 0; // Reset for the next byte
-            byte = 0; // Reset for the next group of bytes
-        }
+//        if(bit_count == BITS_IN_BYTE) {
+//            fprintf(file, "%02X", byte); // Write it into the file
+//            bit_count = 0; // Reset for the next byte
+//            byte = 0; // Reset for the next group of bytes
+//        }
     }
     fprintf(file, "\n");
-    printf("\n");
     // Leftovers bits that didn't form a full byte
-    if (bit_count > 0) {
-        printf(" ---> Partial Byte: %02X\n", byte);
-    }
+//    if (bit_count > 0) {
+//        printf(" ---> Partial Byte: %02X\n", byte);
+//    }
     // Close the file
     fclose(file);
     printf("Random numbers saved to %s\n", filename);
 }
+
 
 int main() {
     char* filename = "qrn.txt";
