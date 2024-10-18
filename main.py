@@ -6,8 +6,10 @@ from qiskit.visualization import plot_histogram
 
 n_bits = int(input("Number of bits to generate: "))
 filename = "random_bits.txt"
+output_format = input("Enter output format (b for binary, h for hex): ")
 qrng_wrapper.seed_rng() # seed the random number generator
-qrng_wrapper.generate_qrng_bytes(n_bits, filename)
+qrng_wrapper.generate_qrng_bytes(n_bits, filename, output_format)
+
 
 
 # from qiskit import QuantumCircuit
