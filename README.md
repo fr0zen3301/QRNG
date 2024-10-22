@@ -21,3 +21,4 @@ Using Qiskit to simulate a quantum channel connection and send a key for AES enc
 
 **Minor improvements:** 
 - Right to choose output file format (either h(HEX) or b(binary))
+- Integrating AES encryption system(see AES_encryption.py)
